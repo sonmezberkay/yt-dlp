@@ -405,6 +405,7 @@ class Request:
 
     @url.setter
     def url(self, url):
+        breakpoint()
         if not isinstance(url, str):
             raise TypeError('url must be a string')
         elif url.startswith('//'):
